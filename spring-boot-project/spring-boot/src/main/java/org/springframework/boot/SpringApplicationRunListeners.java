@@ -43,6 +43,7 @@ class SpringApplicationRunListeners {
 	}
 
 	public void starting() {
+		//SpringApplicationRunListener只有一个EventPublishingRunListener实现类
 		for (SpringApplicationRunListener listener : this.listeners) {
 			listener.starting();
 		}
